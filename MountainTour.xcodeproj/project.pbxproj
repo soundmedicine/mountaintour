@@ -14,6 +14,7 @@
 		395F1C962218CDAA00B900C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395F1C942218CDAA00B900C8 /* LaunchScreen.storyboard */; };
 		395F1C9E2218DB5100B900C8 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F1C9D2218DB5100B900C8 /* MainNavigationController.swift */; };
 		395F1CA02218DF9200B900C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F1C9F2218DF9200B900C8 /* LoginViewController.swift */; };
+		395F1CA1221A295100B900C8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 395F1C972218CDAA00B900C8 /* Info.plist */; };
 		4FE031B403BAF6B60002BD5C /* Pods_MountainTour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656E508F9B66E3508676315 /* Pods_MountainTour.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +84,6 @@
 				890526A824D04A802862CC0A /* Pods-MountainTour.debug.xcconfig */,
 				9350E62D5D88BDF6966BF32E /* Pods-MountainTour.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395F1CA1221A295100B900C8 /* Info.plist in Resources */,
 				395F1C962218CDAA00B900C8 /* LaunchScreen.storyboard in Resources */,
 				395F1C932218CDAA00B900C8 /* Assets.xcassets in Resources */,
 				395F1C912218CDA900B900C8 /* Main.storyboard in Resources */,
