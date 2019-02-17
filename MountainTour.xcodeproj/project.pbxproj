@@ -14,6 +14,7 @@
 		395F1C962218CDAA00B900C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395F1C942218CDAA00B900C8 /* LaunchScreen.storyboard */; };
 		395F1C9E2218DB5100B900C8 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F1C9D2218DB5100B900C8 /* MainNavigationController.swift */; };
 		395F1CA02218DF9200B900C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F1C9F2218DF9200B900C8 /* LoginViewController.swift */; };
+		4FE031B403BAF6B60002BD5C /* Pods_MountainTour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656E508F9B66E3508676315 /* Pods_MountainTour.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		395F1C972218CDAA00B900C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		395F1C9D2218DB5100B900C8 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		395F1C9F2218DF9200B900C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		890526A824D04A802862CC0A /* Pods-MountainTour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainTour.debug.xcconfig"; path = "Target Support Files/Pods-MountainTour/Pods-MountainTour.debug.xcconfig"; sourceTree = "<group>"; };
+		9350E62D5D88BDF6966BF32E /* Pods-MountainTour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainTour.release.xcconfig"; path = "Target Support Files/Pods-MountainTour/Pods-MountainTour.release.xcconfig"; sourceTree = "<group>"; };
+		C656E508F9B66E3508676315 /* Pods_MountainTour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MountainTour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE031B403BAF6B60002BD5C /* Pods_MountainTour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				395F1C8A2218CDA900B900C8 /* MountainTour */,
 				395F1C892218CDA900B900C8 /* Products */,
+				41E9C7DB641C059404D90ABB /* Pods */,
+				DBF08EEBDAA733BC5F924F20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = MountainTour;
 			sourceTree = "<group>";
 		};
+		41E9C7DB641C059404D90ABB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				890526A824D04A802862CC0A /* Pods-MountainTour.debug.xcconfig */,
+				9350E62D5D88BDF6966BF32E /* Pods-MountainTour.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBF08EEBDAA733BC5F924F20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C656E508F9B66E3508676315 /* Pods_MountainTour.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 395F1C9A2218CDAA00B900C8 /* Build configuration list for PBXNativeTarget "MountainTour" */;
 			buildPhases = (
+				3313B850D5F83E95391DB170 /* [CP] Check Pods Manifest.lock */,
 				395F1C842218CDA900B900C8 /* Sources */,
 				395F1C852218CDA900B900C8 /* Frameworks */,
 				395F1C862218CDA900B900C8 /* Resources */,
+				D6AB39560B7041AB94BF50D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3313B850D5F83E95391DB170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MountainTour-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6AB39560B7041AB94BF50D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MountainTour/Pods-MountainTour-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/mParticle-Apple-SDK/mParticle_Apple_SDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mParticle_Apple_SDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MountainTour/Pods-MountainTour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		395F1C842218CDA900B900C8 /* Sources */ = {
@@ -288,6 +362,7 @@
 		};
 		395F1C9B2218CDAA00B900C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 890526A824D04A802862CC0A /* Pods-MountainTour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +381,7 @@
 		};
 		395F1C9C2218CDAA00B900C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9350E62D5D88BDF6966BF32E /* Pods-MountainTour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

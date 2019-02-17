@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import mParticle_Apple_SDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let options = MParticleOptions(key: "62f5e84d23a5314db265fb62d47ede5a",
+                                       secret: "gr-ro6B8ru8W4zfUz3u7Ev5ynDuWYC4rI9JXBNeXjfHxMSyeVOb97xXje7SRwcSf")
+        MParticle.sharedInstance().start(with: options)
         // Override point for customization after application launch.
         return true
     }
