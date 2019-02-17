@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f7y-td-QK6">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,167 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MountainTour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountains" translatesAutoresizingMaskIntoConstraints="NO" id="LKu-58-Kit">
+                                <rect key="frame" x="16" y="88" width="343" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mountain Tours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEV-zk-OtO">
+                                <rect key="frame" x="50" y="159" width="275" height="44.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-GY-NZv">
+                                <rect key="frame" x="130.66666666666666" y="355" width="114" height="102"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgr-er-TEb">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Ski + Board"/>
+                                        <connections>
+                                            <segue destination="ZAg-8k-VSH" kind="show" id="Fpb-za-N9a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSV-hm-EA1">
+                                        <rect key="frame" x="0.0" y="60" width="114" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Hut Trip"/>
+                                        <connections>
+                                            <segue destination="eh0-E6-F6X" kind="show" id="iIF-kz-1ik"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ib3-GY-NZv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Gg-sj-Eeo"/>
+                            <constraint firstItem="ib3-GY-NZv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MT4-bV-Is7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uEV-zk-OtO" secondAttribute="trailing" constant="50" id="Mhi-6j-ofq"/>
+                            <constraint firstItem="LKu-58-Kit" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VM0-RW-LMH"/>
+                            <constraint firstItem="uEV-zk-OtO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Yea-yO-m9L"/>
+                            <constraint firstItem="LKu-58-Kit" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="ayl-vy-ciI"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="LKu-58-Kit" secondAttribute="bottom" id="k3S-Kr-ynx"/>
+                            <constraint firstItem="uEV-zk-OtO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="rKi-LO-HKB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LKu-58-Kit" secondAttribute="trailing" id="tgs-v7-l4b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="54f-qF-xTE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1204" y="-658"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uO4-uM-F1H">
+            <objects>
+                <viewController id="eh0-E6-F6X" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hAw-5l-40Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.52998316380217081" green="1" blue="0.68696940207721613" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="yOn-I2-emW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2O-bx-BGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2236" y="-301"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DqY-hE-wHe">
+            <objects>
+                <viewController id="ZAg-8k-VSH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p8x-rn-APV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.55843992320608327" blue="0.35710271653766013" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Udf-D1-lv8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54x-gD-bVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2242" y="-1023"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kil-6A-qnc">
+            <objects>
+                <viewController id="qtc-SV-Mxp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UR7-v6-Xe0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camp" translatesAutoresizingMaskIntoConstraints="NO" id="3ke-ne-7Uh">
+                                <rect key="frame" x="16" y="44" width="343" height="734"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="KBa-4U-iFw">
+                                <rect key="frame" x="114" y="338" width="146" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="CgA-oj-A6J"/>
+                                    <constraint firstAttribute="height" constant="146" id="y15-fR-6D8"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wYb-gS-iUq">
+                                <rect key="frame" x="114" y="184" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0r0-Vi-A6J">
+                                <rect key="frame" x="114" y="242" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJq-wO-4Mr">
+                                <rect key="frame" x="114" y="300" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KBa-4U-iFw" firstAttribute="top" secondItem="FUH-mc-8fr" secondAttribute="top" constant="231" id="AfJ-v0-CvO"/>
+                            <constraint firstItem="KBa-4U-iFw" firstAttribute="centerX" secondItem="3ke-ne-7Uh" secondAttribute="centerX" id="JpS-v9-srx"/>
+                            <constraint firstItem="3ke-ne-7Uh" firstAttribute="leading" secondItem="UR7-v6-Xe0" secondAttribute="leadingMargin" id="jpG-nz-LIy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3ke-ne-7Uh" secondAttribute="trailing" id="kt2-kM-ceu"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="3ke-ne-7Uh" secondAttribute="bottom" id="uD9-17-LtC"/>
+                            <constraint firstItem="3ke-ne-7Uh" firstAttribute="top" secondItem="FUH-mc-8fr" secondAttribute="top" id="yHO-mi-B66"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FUH-mc-8fr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pl5-hw-SCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-615.20000000000005" y="-658.37438423645324"/>
+        </scene>
+        <!--Main Navigation Controller-->
+        <scene sceneID="Zhg-Di-5h1">
+            <objects>
+                <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f7y-td-QK6" customClass="MainNavigationController" customModule="MountainTour" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2jC-Lm-eYF">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="M2z-G6-irg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3w9-YP-BSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312.80000000000001" y="-658.37438423645324"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camp" width="819" height="1024"/>
+        <image name="mountains" width="768" height="1024"/>
+    </resources>
 </document>
