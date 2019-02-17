@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-GY-NZv">
-                                <rect key="frame" x="130.66666666666666" y="355" width="114" height="102"/>
+                                <rect key="frame" x="130.66666666666663" y="355" width="114" height="102"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgr-er-TEb">
                                         <rect key="frame" x="0.0" y="0.0" width="114" height="40"/>
@@ -76,13 +76,62 @@
                     <view key="view" contentMode="scaleToFill" id="hAw-5l-40Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.52998316380217081" green="1" blue="0.68696940207721613" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hut" translatesAutoresizingMaskIntoConstraints="NO" id="bLg-AM-WR4">
+                                <rect key="frame" x="16" y="88" width="343" height="690"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="S1r-8k-WKu">
+                                <rect key="frame" x="0.0" y="88" width="375" height="122"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hut Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6L-KD-N3V">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trek through the backcountry to one of the famous 10th Mountain Division Huts for two nights. $400" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-ok-iSi">
+                                        <rect key="frame" x="0.0" y="61" width="375" height="61"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="C6L-KD-N3V" firstAttribute="top" secondItem="S1r-8k-WKu" secondAttribute="top" id="HLO-ap-PEn"/>
+                                    <constraint firstItem="C6L-KD-N3V" firstAttribute="leading" secondItem="S1r-8k-WKu" secondAttribute="leading" id="OWr-AT-qvj"/>
+                                    <constraint firstItem="r3G-ok-iSi" firstAttribute="height" secondItem="C6L-KD-N3V" secondAttribute="height" id="XYO-22-doY"/>
+                                    <constraint firstItem="r3G-ok-iSi" firstAttribute="width" secondItem="C6L-KD-N3V" secondAttribute="width" id="lEl-h9-wxS"/>
+                                    <constraint firstAttribute="trailing" secondItem="C6L-KD-N3V" secondAttribute="trailing" id="xf4-KZ-A1M"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct8-wY-714">
+                                <rect key="frame" x="16" y="232" width="109" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Book Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="S1r-8k-WKu" secondAttribute="trailing" id="0RB-YA-gT4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bLg-AM-WR4" secondAttribute="trailing" id="EXl-Jj-XTA"/>
+                            <constraint firstItem="bLg-AM-WR4" firstAttribute="leading" secondItem="hAw-5l-40Y" secondAttribute="leadingMargin" id="VG5-rF-0gh"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="bLg-AM-WR4" secondAttribute="bottom" id="aUg-v5-7VZ"/>
+                            <constraint firstItem="S1r-8k-WKu" firstAttribute="top" secondItem="yOn-I2-emW" secondAttribute="top" id="bEN-ds-7AA"/>
+                            <constraint firstItem="S1r-8k-WKu" firstAttribute="leading" secondItem="yOn-I2-emW" secondAttribute="leading" id="oBj-kB-C5X"/>
+                            <constraint firstItem="bLg-AM-WR4" firstAttribute="top" secondItem="hAw-5l-40Y" secondAttribute="topMargin" id="z8k-LE-XfG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yOn-I2-emW"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2O-bx-BGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2236" y="-301"/>
+            <point key="canvasLocation" x="2236" y="-301.47783251231527"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DqY-hE-wHe">
@@ -91,13 +140,63 @@
                     <view key="view" contentMode="scaleToFill" id="p8x-rn-APV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.55843992320608327" blue="0.35710271653766013" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard" translatesAutoresizingMaskIntoConstraints="NO" id="Skk-6f-1Dl">
+                                <rect key="frame" x="16" y="88" width="343" height="690"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwE-UB-rt7">
+                                <rect key="frame" x="16" y="244" width="103" height="65"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="EMK-GV-4fw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Book Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best way to tour Colorado's famous national forests, as close to or as far away from town as you're comfortable. $300" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAW-Wr-r97">
+                                <rect key="frame" x="0.0" y="114" width="375" height="122"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ski + Snowboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9W-Mf-bKb">
+                                <rect key="frame" x="0.0" y="85" width="375" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GZo-CJ-XIP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Udf-D1-lv8" firstAttribute="trailing" secondItem="QwE-UB-rt7" secondAttribute="trailing" constant="256" id="3RM-J6-s49"/>
+                            <constraint firstItem="QwE-UB-rt7" firstAttribute="leading" secondItem="p8x-rn-APV" secondAttribute="leadingMargin" id="GXP-hB-sgu"/>
+                            <constraint firstItem="f9W-Mf-bKb" firstAttribute="leading" secondItem="RAW-Wr-r97" secondAttribute="leading" id="JO4-oM-hBg"/>
+                            <constraint firstItem="QwE-UB-rt7" firstAttribute="leading" secondItem="Skk-6f-1Dl" secondAttribute="leading" id="LcB-MB-gqa"/>
+                            <constraint firstItem="f9W-Mf-bKb" firstAttribute="leading" secondItem="p8x-rn-APV" secondAttribute="leading" id="OUe-Eq-gEt"/>
+                            <constraint firstItem="f9W-Mf-bKb" firstAttribute="trailing" secondItem="RAW-Wr-r97" secondAttribute="trailing" id="QWk-2s-DA6"/>
+                            <constraint firstAttribute="trailing" secondItem="f9W-Mf-bKb" secondAttribute="trailing" id="Wzl-PW-vhU"/>
+                            <constraint firstItem="f9W-Mf-bKb" firstAttribute="top" secondItem="p8x-rn-APV" secondAttribute="topMargin" constant="-3" id="XYl-w7-z5H"/>
+                            <constraint firstItem="Skk-6f-1Dl" firstAttribute="bottom" secondItem="Udf-D1-lv8" secondAttribute="bottom" id="egO-bo-2q9"/>
+                            <constraint firstItem="RAW-Wr-r97" firstAttribute="top" secondItem="Udf-D1-lv8" secondAttribute="top" constant="26" id="hZI-Yf-qfk"/>
+                            <constraint firstItem="Udf-D1-lv8" firstAttribute="bottom" secondItem="QwE-UB-rt7" secondAttribute="bottom" constant="469" id="m7W-E3-r3w"/>
+                            <constraint firstItem="RAW-Wr-r97" firstAttribute="centerX" secondItem="Skk-6f-1Dl" secondAttribute="centerX" id="wjS-z3-egh"/>
+                            <constraint firstItem="Skk-6f-1Dl" firstAttribute="top" secondItem="Udf-D1-lv8" secondAttribute="top" id="xeQ-D7-yVE"/>
+                            <constraint firstItem="QwE-UB-rt7" firstAttribute="top" secondItem="RAW-Wr-r97" secondAttribute="bottom" constant="8" symbolic="YES" id="yfL-Ux-jPt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Udf-D1-lv8"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="54x-gD-bVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2242" y="-1023"/>
+            <point key="canvasLocation" x="2240.8000000000002" y="-1023.3990147783252"/>
         </scene>
         <!--LoginViewController-->
         <scene sceneID="Kil-6A-qnc">
@@ -188,6 +287,8 @@
     </scenes>
     <resources>
         <image name="camp" width="819" height="1024"/>
+        <image name="hut" width="768" height="1024"/>
         <image name="mountains" width="768" height="1024"/>
+        <image name="snowboard" width="767" height="1024"/>
     </resources>
 </document>
