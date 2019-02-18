@@ -15,8 +15,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Username is \(userName)")
-        print("Password is \(password)")
+        print(userName)
+        print(password)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
