@@ -8,7 +8,6 @@
 
 import UIKit
 import mParticle_Apple_SDK
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,8 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                        secret: "gr-ro6B8ru8W4zfUz3u7Ev5ynDuWYC4rI9JXBNeXjfHxMSyeVOb97xXje7SRwcSf")
         MParticle.sharedInstance().start(with: options)
         
-        
-        FirebaseApp.configure()
         // Override point for customization after application launch.
         return true
     }
