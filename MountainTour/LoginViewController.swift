@@ -14,10 +14,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-
-        
+        super.viewDidLoad()        
     }
     
     @IBAction func loginTapped(_ sender: Any) {
@@ -31,31 +28,5 @@ class LoginViewController: UIViewController {
         mainVC.password = passwordField.text
         mainVC.userName = userNameField.text
     }
-    
-    
-//    private func navigateToMainInterface() {
-////        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-//        
-//        let mainVC = self.storyboard!.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-//        mainVC.userName = userNameField.text
-//        mainVC.password = passwordField.text
-//        let mainNavigationVC = MainNavigationController(rootViewController: mainVC)
-//        present(mainNavigationVC, animated: true, completion: nil)
-//
-//        guard let mainNavigationVC = mainStoryboard.instantiateViewController(withIdentifier: "MainNavigationController") as?
-//            MainNavigationController else {
-//                return
-//        }
-//
-//        print(mainNavigationVC.topViewController!)
-//        print(mainNavigationVC.viewControllers)
-//
-//        if let mainVC = mainNavigationVC.topViewController as? ViewController {
-//            mainVC.userName = userNameField.text
-//            mainVC.password = passwordField.text
-//        }
-//
-//
-//
 //        present(mainNavigationVC, animated: true, completion: nil)
 }

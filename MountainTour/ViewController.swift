@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    
     var userName: String?
     var password: String?
 
@@ -26,7 +24,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
 //        //Dispose of any resources that can be recreated.
     }
-
-
 }
 
