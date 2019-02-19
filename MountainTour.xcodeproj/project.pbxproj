@@ -12,7 +12,6 @@
 		395F1C912218CDA900B900C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395F1C8F2218CDA900B900C8 /* Main.storyboard */; };
 		395F1C932218CDAA00B900C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395F1C922218CDAA00B900C8 /* Assets.xcassets */; };
 		395F1C962218CDAA00B900C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395F1C942218CDAA00B900C8 /* LaunchScreen.storyboard */; };
-		395F1C9E2218DB5100B900C8 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F1C9D2218DB5100B900C8 /* MainNavigationController.swift */; };
 		395F1CA02218DF9200B900C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F1C9F2218DF9200B900C8 /* LoginViewController.swift */; };
 		3980A04D221A4EE90029AC64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3980A04C221A4EE90029AC64 /* GoogleService-Info.plist */; };
 		4FE031B403BAF6B60002BD5C /* Pods_MountainTour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656E508F9B66E3508676315 /* Pods_MountainTour.framework */; };
@@ -26,7 +25,6 @@
 		395F1C922218CDAA00B900C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		395F1C952218CDAA00B900C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		395F1C972218CDAA00B900C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		395F1C9D2218DB5100B900C8 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		395F1C9F2218DF9200B900C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3980A04C221A4EE90029AC64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		890526A824D04A802862CC0A /* Pods-MountainTour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainTour.debug.xcconfig"; path = "Target Support Files/Pods-MountainTour/Pods-MountainTour.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				395F1C942218CDAA00B900C8 /* LaunchScreen.storyboard */,
 				395F1C972218CDAA00B900C8 /* Info.plist */,
 				3980A04C221A4EE90029AC64 /* GoogleService-Info.plist */,
-				395F1C9D2218DB5100B900C8 /* MainNavigationController.swift */,
 				395F1C9F2218DF9200B900C8 /* LoginViewController.swift */,
 			);
 			path = MountainTour;
@@ -223,7 +220,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				395F1CA02218DF9200B900C8 /* LoginViewController.swift in Sources */,
-				395F1C9E2218DB5100B900C8 /* MainNavigationController.swift in Sources */,
 				395F1C8E2218CDA900B900C8 /* ViewController.swift in Sources */,
 				395F1C8C2218CDA900B900C8 /* AppDelegate.swift in Sources */,
 			);

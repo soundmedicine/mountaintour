@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-GY-NZv">
-                                <rect key="frame" x="130.66666666666663" y="355" width="114" height="102"/>
+                                <rect key="frame" x="130.66666666666666" y="355" width="114" height="102"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgr-er-TEb">
                                         <rect key="frame" x="0.0" y="0.0" width="114" height="40"/>
@@ -106,9 +106,8 @@
                                     <constraint firstAttribute="trailing" secondItem="C6L-KD-N3V" secondAttribute="trailing" id="xf4-KZ-A1M"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct8-wY-714">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct8-wY-714">
                                 <rect key="frame" x="16" y="232" width="109" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Book Now">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -119,7 +118,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="S1r-8k-WKu" secondAttribute="trailing" id="0RB-YA-gT4"/>
+                            <constraint firstItem="yOn-I2-emW" firstAttribute="bottom" secondItem="Ct8-wY-714" secondAttribute="bottom" constant="496" id="3Ro-cv-kUv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bLg-AM-WR4" secondAttribute="trailing" id="EXl-Jj-XTA"/>
+                            <constraint firstItem="Ct8-wY-714" firstAttribute="leading" secondItem="bLg-AM-WR4" secondAttribute="leading" id="FLs-My-0SE"/>
+                            <constraint firstItem="Ct8-wY-714" firstAttribute="top" secondItem="S1r-8k-WKu" secondAttribute="bottom" constant="22" id="K25-GC-Fpw"/>
+                            <constraint firstItem="yOn-I2-emW" firstAttribute="trailing" secondItem="Ct8-wY-714" secondAttribute="trailing" constant="250" id="Tt9-2T-9Sm"/>
                             <constraint firstItem="bLg-AM-WR4" firstAttribute="leading" secondItem="hAw-5l-40Y" secondAttribute="leadingMargin" id="VG5-rF-0gh"/>
                             <constraint firstAttribute="bottomMargin" secondItem="bLg-AM-WR4" secondAttribute="bottom" id="aUg-v5-7VZ"/>
                             <constraint firstItem="S1r-8k-WKu" firstAttribute="top" secondItem="yOn-I2-emW" secondAttribute="top" id="bEN-ds-7AA"/>
@@ -242,7 +245,7 @@
                                         </constraints>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <segue destination="f7y-td-QK6" kind="show" id="tlA-zk-1uc"/>
+                                            <segue destination="f7y-td-QK6" kind="show" identifier="goToMain" id="tlA-zk-1uc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -258,18 +261,18 @@
                         <viewLayoutGuide key="safeArea" id="FUH-mc-8fr"/>
                     </view>
                     <connections>
-                        <outlet property="passwordField" destination="0r0-Vi-A6J" id="kQr-DV-ggN"/>
-                        <outlet property="userNameField" destination="wYb-gS-iUq" id="0dM-iZ-NQd"/>
+                        <outlet property="passwordField" destination="0r0-Vi-A6J" id="FXh-gl-pJM"/>
+                        <outlet property="userNameField" destination="wYb-gS-iUq" id="vWD-1H-u8c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pl5-hw-SCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-815" y="-658"/>
         </scene>
-        <!--Main Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="Zhg-Di-5h1">
             <objects>
-                <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f7y-td-QK6" customClass="MainNavigationController" customModule="MountainTour" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f7y-td-QK6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2jC-Lm-eYF">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
