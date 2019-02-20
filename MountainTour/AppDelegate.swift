@@ -8,7 +8,7 @@
 
 import UIKit
 import mParticle_Apple_SDK
-import Firebase
+//import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,8 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         MParticle.sharedInstance().logEvent("Login Tapped", eventType: MPEventType.navigation, eventInfo: nil)
         MParticle.sharedInstance().start(with: options)
+        MParticle.sharedInstance().logError("Login Failed", eventInfo: nil)
+        MParticle.sharedInstance().logScreen("Ski + Snowboard", eventInfo: nil)
         
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
         
         // Override point for customization after application launch.
         return true
