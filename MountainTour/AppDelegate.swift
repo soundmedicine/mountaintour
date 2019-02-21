@@ -17,20 +17,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        
         let options = MParticleOptions(key: "62f5e84d23a5314db265fb62d47ede5a",
                                        secret: "gr-ro6B8ru8W4zfUz3u7Ev5ynDuWYC4rI9JXBNeXjfHxMSyeVOb97xXje7SRwcSf")
 
         let request = MPIdentityApiRequest()
-        request.email = "email@example.com"
+        let currentUser = MParticle.sharedInstance().identity.currentUser
+        print("!!!!!!!!!\(currentUser)")
+        
+        request.email = "mymymy@momomo.com"
         options.identifyRequest = request
         options.onIdentifyComplete = { (apiResult, error) in
             NSLog("Identify complete. userId = %@ error = %@", apiResult?.user.userId.stringValue ?? "Null User ID", error?.localizedDescription ?? "No Error Available")
+            print("!!!!!!!\(apiResult!.user)")
+            MParticle.sharedInstance().logEvent("Logged In", eventType: MPEventType.navigation, eventInfo: ["city":"New York"])
         }
         
-        MParticle.sharedInstance().logEvent("Login Tapped", eventType: MPEventType.navigation, eventInfo: nil)
         MParticle.sharedInstance().start(with: options)
-        MParticle.sharedInstance().logError("Login Failed", eventInfo: nil)
-        MParticle.sharedInstance().logScreen("Ski + Snowboard", eventInfo: nil)
+        
+        MParticle.sharedInstance()
+        MParticle.sharedInstance().logError("Login Failed", eventInfo: ["string":"spring"])
+        MParticle.sharedInstance().logScreen("Main Menu", eventInfo: nil)
+//        MParticle.sharedInstance().logException(NSException, topmostContext: nil)
         
 //        FirebaseApp.configure()
         
